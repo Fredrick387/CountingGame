@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/xadorevizo/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+let mathGenRan = Math.floor(Math.random() * 100);
+
+for(i = 0; i < 9; i++)
+{
+
+  let guess = prompt("Wanna Play A Game For Your Life Human? Guess a number between 1 and 100");
+  if (guess > mathGenRan){
+    alert("Silly Human! Guess Lower! Watch out only " + i + " chances are left to answer correctly!");
+  }else if (guess < mathGenRan){
+      alert("Holy Mother Board, Flesh Bag! Can't you get the right answer! Guess Higher Human! and remember you only have " + i + "guesses left!");
+  }
+    else {
+    alert("Winner, Winner, Chicken Dinner! You guessed " + mathGenRan + ". That is correct!");
+  }}
+  
+
+
+                         
+</script>
+</body>
+</html>
